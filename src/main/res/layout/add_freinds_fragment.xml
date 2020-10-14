@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_freinds"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtname"
+            android:hint="Freinds Name"
+            android:textColorHint="#CCC"
+            android:textColor="#000"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtgender"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:entries="@array/gender_list"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtemail"
+            android:hint="Email"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#CCC"
+            android:textColor="#000"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtphone"
+            android:hint="Phone Number"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#CCC"
+            android:textColor="#000"
+            android:inputType="number"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtaddress"
+            android:hint="Address"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#CCC"
+            android:textColor="#000"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsave"
+            android:layout_marginTop="24dp"
+            android:text="@string/save"/>
+    </LinearLayout>
+
+</LinearLayout>
